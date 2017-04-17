@@ -1,9 +1,14 @@
 const pg = require('./knex')
 
-var getAll = function() {
-    pg('link').select()
+function getAll() {
+    return pg('link').select()
+}
+
+function add(obj) {
+    return pg('link').insert(obj)
 }
 
 module.exports = {
-    getAll
+    getAll,
+    add
 }
