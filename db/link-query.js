@@ -8,6 +8,8 @@ function add(obj) {
     return pg('link').insert(obj)
 }
 
+
+
 module.exports = {
     getAll,
     add

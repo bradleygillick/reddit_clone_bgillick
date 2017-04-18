@@ -33,6 +33,13 @@ app.post('/addLink', (req, res) => {
     })
 })
 
+// app.post('/upvote', (req, res) => {
+//     linkQuery.add(req.body)
+//     .then(() => {
+//         res.redirect('/')
+//     })
+// })
+
 app.listen(port, () => {
     console.log(`listening on ${port}`)
 })
